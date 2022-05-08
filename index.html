@@ -9,8 +9,8 @@
         <meta name="description" content="Web site created using create-react-app"/>
         <link rel="apple-touch-icon" href="/logo192.png"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <link rel="manifest" href="/manifest.json"/>
-        <title>React App</title>
+<!--         <link rel="manifest" href="/manifest.json"/> -->
+        <title>DrHong Audio App</title>
         
         <script defer="defer" src="./build/main.6297d763.js?432"></script>
         <link href="/static/css/main.31d6cfe0.css" rel="stylesheet">
@@ -22,7 +22,16 @@
             $(document).ready(function(){
           
                 $.get("./build/asset-manifest.json", function(data, status){
-                    console.log(data.files['main.js'])
+                
+                    let reactSet = document.createElement('script');
+                    drsax.setAttribute('defer', 'defer');
+                    drsax.setAttribute('src', data.files['main.js']);
+                    document.head.appendChild(reactSet);
+                    
+                    let linkSet = document.createElement('link');
+                    linkSet.setAttribute('rel', 'stylesheet');  
+                    linkSet.setAttribute('href', data.files['main.css']);
+                    document.head.appendChild(linkSet);
                     
                 });
            
