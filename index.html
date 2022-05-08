@@ -22,7 +22,8 @@
             $(document).ready(function(){
           
                 $.get("./build/asset-manifest.json", function(data, status){
-                    console.log(data)
+                    console.log(data.files.main.js)
+                    
                 });
            
             });
