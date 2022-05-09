@@ -24,8 +24,8 @@
                 $.get("./build/asset-manifest.json", function(data, status){
                 
                     let reactSet = document.createElement('script');
-                    drsax.setAttribute('defer', 'defer');
-                    drsax.setAttribute('src', data.files['main.js']);
+                    reactSet.setAttribute('defer', 'defer');
+                    reactSet.setAttribute('src', data.files['main.js']);
                     console.log(reactSet);
                     document.head.appendChild(reactSet);
                     
