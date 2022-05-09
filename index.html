@@ -26,13 +26,13 @@
                 
                     let reactSet = document.createElement('script');
                     reactSet.setAttribute('defer', 'defer');
-                    reactSet.setAttribute('src', data.files['main.js']);
+                    reactSet.setAttribute('src', './' + data.files['main.js']);
                     console.log(reactSet);
                     document.head.appendChild(reactSet);
                     
                     let linkSet = document.createElement('link');
                     linkSet.setAttribute('rel', 'stylesheet');  
-                    linkSet.setAttribute('href', data.files['main.css']);
+                    linkSet.setAttribute('href', './' + data.files['main.css']);
                     document.head.appendChild(linkSet);
                     
                 });
