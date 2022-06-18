@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.698bc4ec.css","mappings":"AAEA,uCAEI,WAEJ,CAEA,iBAEI,iBAEJ","sources":["view/PageContainer/Contents/section/audioStyle.css"],"sourcesContent":["\n\n.AudioBox input[name=osc_volume]#knob1 {\n    \n    width: 300px;\n  \n}\n\n.AudioBox button {\n    \n    margin-right: 10px;\n  \n}\n\n"],"names":[],"sourceRoot":""}
